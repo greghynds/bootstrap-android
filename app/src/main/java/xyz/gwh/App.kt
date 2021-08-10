@@ -1,11 +1,10 @@
 package xyz.gwh
 
 import android.app.Application
+import org.koin.core.context.startKoin
 import xyz.gwh.arch.di.asyncModule
 import xyz.gwh.arch.di.networkModule
 import xyz.gwh.arch.di.serializationModule
-import xyz.gwh.feed.di.feedModule
-import org.koin.core.context.startKoin
 
 class App : Application() {
 
@@ -13,7 +12,6 @@ class App : Application() {
         asyncModule,
         serializationModule,
         networkModule,
-        feedModule
     )
 
     override fun onCreate() {

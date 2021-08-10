@@ -1,6 +1,6 @@
 package xyz.gwh.arch.di
 
-import com.allsouls.newsapp.BuildConfig
+import xyz.gwh.BuildConfig
 import xyz.gwh.arch.data.ClientConfig
 import org.koin.dsl.module
 
